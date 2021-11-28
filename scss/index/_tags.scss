@@ -1,0 +1,239 @@
+.wrraper{
+  display: flex;
+  padding-top: 60px;
+  margin-top: 2px;
+  background-color: var(--wite-bg);
+}
+.hero__container{
+  padding-left: 0;
+}
+.hero__navigation{
+  width: 234px;
+  margin-right: 10px;
+  padding-top: 11px;
+  
+}
+.header--user{
+  width: 47px;
+  height: 32px;
+}
+.navigation__link{
+  width: 234px;
+  text-decoration: none;
+  color: var(--regular);
+  padding: 6px 24px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+
+  &:hover{
+    background-color: #c4c4c46c;
+  }
+
+}
+.active--link{
+  background-color: var(--nav-activ);
+  line-height: 29px;
+  color: #000000;
+
+  .navigation__icon{
+    color: #ff0000;
+  }
+}
+.navigation__icon{
+  margin-right: 30px;
+  font-size: 21px;
+  vertical-align: middle;
+}
+
+// tagsss
+.hero__tags{
+  flex-grow: 1;
+  width: 80%;
+  border-top: 1px solid #80808070;
+}
+.tags__list{
+  margin-top: 9px;
+  position: relative;
+  height: 41px;
+  border-bottom: 1px solid #80808070;
+}
+.tags__link{
+  text-decoration: none;
+  color: var(--regular);
+  padding:6px 0px;
+  display: block;
+  text-align: center;
+  border: var(--tag-border);
+  background-color: var(--tag-bg);
+  border-radius: 16px;
+  font-size: 14px;
+  color: var(--tag-color);
+  margin-right: 10px;
+
+}
+.slick-list {
+  overflow: hidden;
+  padding: 0 43px;
+}
+.slick-track{
+  display: flex;
+  align-items: flex-start;
+  min-height: 0;
+  height: 100%;
+}
+.slick-arrow{
+  position: absolute;
+  z-index: 2;
+  font-size: 0;
+  width: 45px;
+  border: none;
+  cursor: pointer;
+}
+.slick-prev {
+  right: 0;
+  top: 3px;
+  top: -9px;
+  height: 48px;
+  background: #ffffff;
+  background: linear-gradient(90deg, #ffffffc4 26%, #ffffff 75%);
+  &::after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    right: 11px;
+    background-repeat: no-repeat;
+    background-image: url('../../img/right.svg');
+  }
+}
+.slick-next {
+  position: relative;
+  top: -28px;
+  top: -39px;
+  height: 48px;
+  background: #ffffff;
+  background: linear-gradient(90deg, #ffffff 26%, #ffffffc4 75%);
+  &::after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    left: 11px;
+    background-repeat: no-repeat;
+    background-image: url('../../img/left.svg');
+  }
+}
+.active2{
+  background:var(--tag-bg-darc);
+  color: #fff;
+}
+.menu--smal{
+  display: none;
+}
+.hero__second-nav-tog{
+  display: none;
+}
+@include respon(1312px){
+  .hero__main-nav .hero__navigation{
+    width: 72px;
+  }
+  .menu--big{
+    display: none;
+  }
+ .menu--smal{
+    display: block;
+  }
+  .hero__main-nav .navigation__link{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    width: 72px;
+    padding: 0;
+    margin-bottom: 32px;
+    line-height: 16px;
+  }
+  .hero__main-nav .navigation__list{
+    text-align: center;
+  }
+  .hero__main-nav .navigation__icon{
+    margin: 0;
+  }
+  .hero__second-nav-tog{
+    display: block;
+  }
+}
+.nav--btn{
+  width: 72px;
+  .navigation__link{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    width: 72px;
+    padding: 0;
+    margin-bottom: 32px;
+    line-height: 16px;
+  }
+  .navigation__list{
+    text-align: center;
+  }
+  .navigation__icon{
+    margin: 0;
+  }
+}
+.hero__wrraper{
+  position: relative;
+  overflow: hidden;
+}
+.hero__second-nav{
+  position: absolute;
+  left: -100%;
+  opacity: 0;
+  padding-top: 12px;
+  top: 0;
+  transition: left .3s  ease;
+}
+.hero__second-nav-tog{
+  left: 0;
+  z-index: 30;
+  background-color: var(--wite-bg);
+  height: 100vh;
+  opacity: 1;
+  width: 244px;
+  position: fixed;
+}
+.hero__second-btn{
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-bottom: 21px;
+
+}
+.hero__container{
+  display: flex;
+}
+.darc{
+  .slick-next{
+    background: transparent;
+  }
+  .slick-prev{
+    background: transparent;
+  }
+}
+.darc{
+  .active--link{
+    background-color: var(--nav-activ);
+    line-height: 29px;
+    color: #fff;
+  
+    .navigation__icon{
+      color: #fff;
+    }
+  }
+  .site-header__meny{
+    color: #fff;
+  }
+}

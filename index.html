@@ -1,15 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body>
 
+<body>
+  <section id="site-header">
+    <div class="site-container container">
+      <div class="site-header__logos">
+        <span class="site-header__meny-span">
+          <button class="site-header__meny menu--big"><i class="bi bi-list"></i></button>
+        </span>
+        <span class="site-header__meny-second">
+          <button class="site-header__meny menu--smal"><i class="bi bi-list"></i></button>
+        </span>
+        <a class="site-header__logo" href="#">
+          <img src="./img/logo.svg" alt="logo">
+        </a>
+        <a class="site-header__logo2" href="#">
+          <img src="./img/white-logo.svg" alt="logo">
+        </a>
+      </div>
+      <div class="site-header__forms">
+        <form class="site-header__form" action="#" method="post">
+          <div class="site-header__form-searches">
+            <div class="site-header__form-inner">
+              <label class="site-header__lable">
+                <input class="site-header__input" type="search" placeholder="Search" name="search" autocomplete="off">
+              </label>
+            </div>
+            <button class="site-header__btn" type="submit"><i class="fal fa-search"></i></button>
+          </div>
+        </form>
+        <button class="site-header__voise"><i class="fas fa-microphone"></i></button>
+      </div>
+      <div class="site-header__link">
+        <button class="site-header__links"><i class="fas fa-video-plus"></i></button>
+        <button class="site-header__links"><i class="bi bi-grid-3x3-gap-fill"></i></button>
+        <button class="site-header__links"><i class='bx bxs-bell'></i></button>
+        <button class="site-header__links header--user"><img src="./img/user.png" alt="user"></button>
+        <div class="site-header__user-bar user-bar">
+          <div class="user-bar__info">
+            <div class="user-bar__img">
+              <img src="./img/userr.png" alt="user"></button>
+            </div>
+            <div class="user-bar__name">
+              <h2 class="user-bar__names">Shruti Bhutda</h2>
+              <a class="user-bar__inner-link" href="#">Manage Your Google Account</a>
+            </div>
+          </div>
+          <ul class="user-bar__list mar--top">
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="far user-bar__icon fa-address-book"></i>Your channel</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-usd-circle"></i>Purchases and memberships</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-cog"></i>YouTube Studio </a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fad user-bar__icon fa-id-badge"></i>Switch account</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fal user-bar__icon fa-sign-out"></i>Sign out</a></li>
+          </ul>
+          <ul class="user-bar__list">
+            <li class="user-bar__item"><a class="user-bar__link aparesens" href="#"><span><i class="fas user-bar__icon fa-palette"></i>Appearance: Light</span><i class="fal user-bar__icon fa-chevron-right"></i></a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-globe-asia"></i>Language: British English</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fal user-bar__icon fa-globe"></i>Location: India</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-cog"></i>Settings</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fad user-bar__icon fa-donate"></i>Your data in YouTube</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fad user-bar__icon fa-donate"></i>Help</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-palette"></i>Keyboard shortcuts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hero__container container hero">
+    <div class="hero__wrraper wrraper">
+      <div>
+        <div class="hero__main-nav">
+          <nav class="hero__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link active--link" href="#"><i
+                    class='navigation__icon bx bxs-home'></i>Home</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class="navigation__icon fas fa-compass"></i>Explore</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class="navigation__icon bi bi-collection-play-fill"></i>Subscriptions</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class='navigation__icon bx bxs-videos'></i>Library</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class='navigation__icon bx bx-history'></i>History</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class="navigation__icon bi bi-play-btn"></i>Your Videos</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class="navigation__icon fas fa-clock"></i>Watch Later</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class='navigation__icon bx bxs-like'></i>Liked Videos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero__second-nav">
+          <div class="hero__second-btn">
+            <span class="site-header__meny-second">
+              <button class="site-header__meny menu--smal nav-close"><i class="bi bi-list"></i></button>
+            </span>
+            <a class="site-header__logo" href="#">
+              <img src="./img/logo.svg" alt="logo">
+            </a>
+            <a class="site-header__logo2" href="#">
+              <img src="./img/white-logo.svg" alt="logo">
+            </a>
+          </div>
+          <nav class="hero__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link active--link" href="#"><i
+                    class='navigation__icon bx bxs-home'></i>Home</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class="navigation__icon fas fa-compass"></i>Explore</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class="navigation__icon bi bi-collection-play-fill"></i>Subscriptions</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class='navigation__icon bx bxs-videos'></i>Library</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class='navigation__icon bx bx-history'></i>History</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class="navigation__icon bi bi-play-btn"></i>Your Videos</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class="navigation__icon fas fa-clock"></i>Watch Later</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#"><i
+                    class='navigation__icon bx bxs-like'></i>Liked Videos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <sectio class="hero__tags tags">
+        <ul class="tags__list">
+          <li class="tags__item"><a class="tags__link active2" href="#">All</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">User</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">UI/UX</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Logos</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Computer</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Sales</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Music</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Live</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Stock</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Music</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Mixes</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Lo-fi</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Music</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Music</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Music</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Music</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Live</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Stock</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Music</a></li>
+          <li class="tags__item"><a class="tags__link" href="#">Mixes</a></li>
+        </ul>
+        <div class="hero__all">
+          <div class="hero__row row">
+            <div class="hero__elements col-lg-3 col-md-4 col-xl-3 col-sm-6 col-xs-12">
+              <div class="hero__inner">
+                <div class="hero__iframes">
+                  <iframe class="hero__iframe" src="https://www.youtube.com/embed/NRnjV013f5I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <a class="hero__iframe-contaent">
+                  <span class="hero__iframe-img">
+                    <img src="img/log1.png" alt="logo">
+                  </span>
+                  <span>
+                    <span class="hero__iframe-title">Payitaht Abdülhamid 26.</span>
+                    <span class="hero__iframe-text">JYP Entertainment</span>
+                    <span class="hero__iframe-text">130M views • 1 Month ago</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="hero__elements col-lg-3 col-md-4 col-xl-3 col-sm-6 col-xs-12">
+              <div class="hero__inner">
+                <div class="hero__iframes">
+                  <iframe class="hero__iframe" src="https://www.youtube.com/embed/3Rj3wQce1bU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <a class="hero__iframe-contaent">
+                  <span class="hero__iframe-img">
+                    <img src="img/log6.png" alt="logo">
+                  </span>
+                  <span>
+                    <span class="hero__iframe-title">The World’s</span>
+                    <span class="hero__iframe-text">JYP Entertainment</span>
+                    <span class="hero__iframe-text">130M views • 1 Month ago</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="hero__elements col-lg-3 col-md-4 col-xl-3 col-sm-6 col-xs-12">
+              <div class="hero__inner">
+                <div class="hero__iframes">
+                  <iframe class="hero__iframe" src="https://www.youtube.com/embed/6ZJTdQ-xCBE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <a class="hero__iframe-contaent">
+                  <span class="hero__iframe-img">
+                    <img src="img/log2.png" alt="logo">
+                  </span>
+                  <span>
+                    <span class="hero__iframe-title">10 Russian Songs </span>
+                    <span class="hero__iframe-text">JYP Entertainment</span>
+                    <span class="hero__iframe-text">130M views • 1 Month ago</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="hero__elements col-lg-3 col-md-4 col-xl-3 col-sm-6 col-xs-12">
+              <div class="hero__inner">
+                <div class="hero__iframes">
+                  <iframe class="hero__iframe" src="https://www.youtube.com/embed/L1bbN08o6Y4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <a class="hero__iframe-contaent">
+                  <span class="hero__iframe-img">
+                    <img src="img/log3.png" alt="logo">
+                  </span>
+                  <span>
+                    <span class="hero__iframe-title">Dji. Death Fails</span>
+                    <span class="hero__iframe-text">JYP Entertainment</span>
+                    <span class="hero__iframe-text">130M views • 1 Month ago</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="hero__elements col-lg-3 col-md-4 col-xl-3 col-sm-6 col-xs-12">
+              <div class="hero__inner">
+                <div class="hero__iframes">
+                  <iframe class="hero__iframe" src="https://www.youtube.com/embed/RpjhYyxLGmw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <a class="hero__iframe-contaent">
+                  <span class="hero__iframe-img">
+                    <img src="img/log4.png" alt="logo">
+                  </span>
+                  <span>
+                    <span class="hero__iframe-title">Katta Kebab</span>
+                    <span class="hero__iframe-text">JYP Entertainment</span>
+                    <span class="hero__iframe-text">130M views • 1 Month ago</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="hero__elements col-lg-3 col-md-4 col-xl-3 col-sm-6 col-xs-12">
+              <div class="hero__inner">
+                <div class="hero__iframes">
+                  <iframe class="hero__iframe" src="https://www.youtube.com/embed/qSjpu9sE330"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <a class="hero__iframe-contaent">
+                  <span class="hero__iframe-img">
+                    <img src="img/log5.png" alt="logo">
+                  </span>
+                  <span>
+                    <span class="hero__iframe-title">Sami Yusuf</span>
+                    <span class="hero__iframe-text">JYP Entertainment</span>
+                    <span class="hero__iframe-text">130M views • 1 Month ago</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="hero__elements col-lg-3 col-md-4 col-xl-3 col-sm-6 col-xs-12">
+              <div class="hero__inner">
+                <div class="hero__iframes">
+                  <iframe class="hero__iframe" src="https://www.youtube.com/embed/O-fsiL5i9JY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <a class="hero__iframe-contaent">
+                  <span class="hero__iframe-img">
+                    <img src="img/log6.png" alt="logo">
+                  </span>
+                  <span>
+                    <span class="hero__iframe-title">Turtsiya 4K</span>
+                    <span class="hero__iframe-text">JYP Entertainment</span>
+                    <span class="hero__iframe-text">130M views • 1 Month ago</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="hero__elements col-lg-3 col-md-4 col-xl-3 col-sm-6 col-xs-12">
+              <div class="hero__inner">
+                <div class="hero__iframes">
+                  <iframe class="hero__iframe" src="https://www.youtube.com/embed/Z7-QdoofMq8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <a class="hero__iframe-contaent">
+                  <span class="hero__iframe-img">
+                    <img src="img/log1.png" alt="logo">
+                  </span>
+                  <span>
+                    <span class="hero__iframe-title">Charlie Chaplin</span>
+                    <span class="hero__iframe-text">JYP Entertainment</span>
+                    <span class="hero__iframe-text">130M views • 1 Month ago</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </sectio>
+    </div>
+
+  </div>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/script.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

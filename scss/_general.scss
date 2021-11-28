@@ -1,25 +1,79 @@
 /* GENERAL */
 html {
   box-sizing: border-box;
-  height: 100%;
   scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
+:root{
+  --regular:#808080;
+  --tag-bg:#c4c4c466;
+  --tag-border:1px solid #0000001a;
+  --hero-bg:#c4c4c41a;
+  --darc:#000;
+  --tag-bg-darc:#282828;
+  --nav-activ: #C4C4C4;
+  --tag-color:#282828;
+  --hero-bg:#F6F6F6;
+  --wite-bg:#fff;
+  --user-color:#000000cc;
+}
+.darc{
+  --wite-bg: #212121;
+  --darc:#fff;
+  color: #fff;
+  --hero-bg:#181818;
+  --tag-bg-darc:#373737;
+  --tag-color:#fff;
+  --user-color:#fff;
+  --regular:#fff;
+}
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
+  font-family:$font-stack;
+  background-color: var(--wite-bg);
 }
 
 img {
