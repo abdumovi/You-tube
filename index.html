@@ -15,6 +15,14 @@
 </head>
 
 <body>
+  <div class="site-header__modal modal">
+    <p class="modal__text">Listening... <button class="modal__btn"><i class="bi bi-x-lg"></i></button></p>
+    <div class="modal__icons">
+      <div class="modal__icon2">
+        <i class="bi modal-icn bi-mic-fill"></i>
+      </div>
+    </div>
+  </div>
   <section id="site-header">
     <span class="site-header__span"></span>
     <div class="site-container container">
@@ -43,12 +51,35 @@
             <button class="site-header__btn" type="submit"><i class="fal fa-search"></i></button>
           </div>
         </form>
-        <button class="site-header__voise"><i class="fas fa-microphone"></i></button>
+        <button class="site-header__voise voise--btn"><i class="fas fa-microphone"></i></button>
       </div>
       <div class="site-header__link">
-        <button class="site-header__links"><i class="fas fa-video-plus"></i></button>
-        <button class="site-header__links"><i class="bi bi-grid-3x3-gap-fill"></i></button>
-        <button class="site-header__links"><i class='bx bxs-bell'></i></button>
+        <button class="site-header__links add-video"><i class="fas fa-video-plus"></i></button>
+        <ul class="add-video__block">
+          <li class="add-video__list"><a class="add-video__link" href="#"><i class="fas add-video__icon fa-caret-square-up"></i>Upload video</a></li>
+          <li class="add-video__list"><a class="add-video__link" href="#"><i class="fad add-video__icon fa-satellite-dish"></i>Go live</a></li>
+        </ul>
+        <button class="site-header__links frame-btn"><i class="bi bi-grid-3x3-gap-fill"></i></button>
+        <div class="site-header__frame frame">
+          <a class="frame__firt-link" href="#"><i class="fab frame__icon fa-youtube"></i>YouTube TV</a>
+          <ul class="frame__list frame--border">
+            <li class="frame__item"><a class="frame__link" href="#"><i class="fab frame__icon fa-youtube"></i>YouTube Music</a></li>
+            <li class="frame__item"><a class="frame__link" href="#"><i class="fab frame__icon fa-youtube"></i>YouTube Kids</a></li>
+          </ul>
+          <ul class="frame__list">
+            <li class="frame__item"><a class="frame__link" href="#"><i class="fab frame__icon fa-youtube"></i>Creators Academy</a></li>
+            <li class="frame__item"><a class="frame__link" href="#"><i class="fab frame__icon fa-youtube"></i>YouTube for</a></li>
+          </ul>
+        </div>
+        <button class="site-header__links bell-btn"><i class='bx bxs-bell'></i></button>
+        <div class="site-header__bell bell">
+          <p class="bell__text">Notifications <a class="bell__link" href="#"><i class="bi bi-gear-fill"></i></a></p>
+          <div class="bell__content">
+            <i class='bx bell__icon bxs-bell'></i>
+            <p class="bell__title">Your notifications live here</p>
+            <p class="bell__text-inner">Subscribe to your favourite channels to recieve notifications about their latest videos</p>
+          </div>
+        </div>
         <button class="site-header__links header--user"><img src="./img/user.png" alt="user"></button>
         <div class="site-header__user-bar user-bar">
           <div class="user-bar__info">
@@ -61,26 +92,38 @@
             </div>
           </div>
           <ul class="user-bar__list mar--top">
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="far user-bar__icon fa-address-book"></i>Your channel</a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-usd-circle"></i>Purchases and memberships</a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-cog"></i>YouTube Studio </a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fad user-bar__icon fa-id-badge"></i>Switch account</a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fal user-bar__icon fa-sign-out"></i>Sign out</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="far user-bar__icon fa-address-book"></i>Your channel</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fas user-bar__icon fa-usd-circle"></i>Purchases and memberships</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fas user-bar__icon fa-cog"></i>YouTube Studio </a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fad user-bar__icon fa-id-badge"></i>Switch account</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fal user-bar__icon fa-sign-out"></i>Sign out</a></li>
           </ul>
           <ul class="user-bar__list">
-            <li class="user-bar__item"><a class="user-bar__link aparesens" href="#"><span><i class="fas user-bar__icon fa-palette"></i>Appearance: Light</span><i class="fal user-bar__icon fa-chevron-right"></i></a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-globe-asia"></i>Language: British English</a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fal user-bar__icon fa-globe"></i>Location: India</a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-cog"></i>Settings</a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fad user-bar__icon fa-donate"></i>Your data in YouTube</a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fad user-bar__icon fa-donate"></i>Help</a></li>
-            <li class="user-bar__item"><a class="user-bar__link" href="#"><i class="fas user-bar__icon fa-palette"></i>Keyboard shortcuts</a></li>
+            <li class="user-bar__item"><a class="user-bar__link aparesens" href="#"><span><i
+                    class="fas user-bar__icon fa-palette"></i>Appearance: Light</span><i
+                  class="fal user-bar__icon fa-chevron-right"></i></a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fas user-bar__icon fa-globe-asia"></i>Language: British English</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fal user-bar__icon fa-globe"></i>Location: India</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fas user-bar__icon fa-cog"></i>Settings</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fad user-bar__icon fa-donate"></i>Your data in YouTube</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fad user-bar__icon fa-donate"></i>Help</a></li>
+            <li class="user-bar__item"><a class="user-bar__link" href="#"><i
+                  class="fas user-bar__icon fa-palette"></i>Keyboard shortcuts</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-
   <div class="hero__container container hero">
     <div class="hero__wrraper wrraper">
       <div>
@@ -167,10 +210,10 @@
           <div class="hero__row row">
             <div class="hero__elements col-lg-3 col-md-4 col-xl-3 col-sm-6 col-xs-12">
               <div class="hero__inner">
-                  <div class="hero__iframes">
-                    <img class="hero__gif" src="./img/gif1.webp" alt="img">
-                    <img class="hero__iframe"  src="./img/hero1.jpg" alt="hero">
-                  </div>
+                <div class="hero__iframes">
+                  <img class="hero__gif" src="./img/gif1.webp" alt="img">
+                  <img class="hero__iframe" src="./img/hero1.jpg" alt="hero">
+                </div>
                 <a class="hero__iframe-contaent">
                   <span class="hero__iframe-img">
                     <img src="img/log1.png" alt="logo">
@@ -187,7 +230,7 @@
               <div class="hero__inner">
                 <div class="hero__iframes">
                   <img class="hero__gif" src="./img/gif2.webp" alt="img">
-                  <img class="hero__iframe"  src="./img/hero2.jpg" alt="hero">
+                  <img class="hero__iframe" src="./img/hero2.jpg" alt="hero">
                 </div>
                 <a class="hero__iframe-contaent">
                   <span class="hero__iframe-img">
@@ -206,7 +249,7 @@
                 <div class="hero__iframes">
                   <div class="hero__iframes">
                     <img class="hero__gif" src="./img/gif3.webp" alt="img">
-                    <img class="hero__iframe"  src="./img/hero3.jpg" alt="hero">
+                    <img class="hero__iframe" src="./img/hero3.jpg" alt="hero">
                   </div>
                 </div>
                 <a class="hero__iframe-contaent">
@@ -225,7 +268,7 @@
               <div class="hero__inner">
                 <div class="hero__iframes">
                   <img class="hero__gif" src="./img/gif4.webp" alt="img">
-                  <img class="hero__iframe"  src="./img/hero4.jpg" alt="hero">
+                  <img class="hero__iframe" src="./img/hero4.jpg" alt="hero">
                 </div>
                 <a class="hero__iframe-contaent">
                   <span class="hero__iframe-img">
@@ -244,7 +287,7 @@
                 <div class="hero__iframes">
                   <div class="hero__iframes">
                     <img class="hero__gif" src="./img/gif5.webp" alt="img">
-                    <img class="hero__iframe"  src="./img/hero5.jpg" alt="hero">
+                    <img class="hero__iframe" src="./img/hero5.jpg" alt="hero">
                   </div>
                 </div>
                 <a class="hero__iframe-contaent">
@@ -264,7 +307,7 @@
                 <div class="hero__iframes">
                   <div class="hero__iframes">
                     <img class="hero__gif" src="./img/gif6.webp" alt="img">
-                    <img class="hero__iframe"  src="./img/hero6.jpg" alt="hero">
+                    <img class="hero__iframe" src="./img/hero6.jpg" alt="hero">
                   </div>
                 </div>
                 <a class="hero__iframe-contaent">
@@ -284,7 +327,7 @@
                 <div class="hero__iframes">
                   <div class="hero__iframes">
                     <img class="hero__gif" src="./img/gif7.webp" alt="img">
-                    <img class="hero__iframe"  src="./img/hero7.jpg" alt="hero">
+                    <img class="hero__iframe" src="./img/hero7.jpg" alt="hero">
                   </div>
                 </div>
                 <a class="hero__iframe-contaent">
@@ -304,7 +347,7 @@
                 <div class="hero__iframes">
                   <div class="hero__iframes">
                     <img class="hero__gif" src="./img/gif8.webp" alt="img">
-                    <img class="hero__iframe"  src="./img/hero8.jpg" alt="hero">
+                    <img class="hero__iframe" src="./img/hero8.jpg" alt="hero">
                   </div>
                 </div>
                 <a class="hero__iframe-contaent">
