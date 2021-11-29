@@ -104,9 +104,7 @@ userBtn.addEventListener('click',function(){
   userbar.classList.toggle('user-bar-block');
   elNavSecond.classList.remove('hero__second-nav-tog');
 });
-userBtn.addEventListener('blur',function(){
-  userbar.classList.remove('user-bar-block');
-});
+
 //====================================darc
 
 darcbtn.addEventListener('click',function(){
