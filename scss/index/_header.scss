@@ -132,6 +132,7 @@
 .user-bar__info{
   position: fixed;
   width: 316px;
+  z-index: 20;
   background-color: var(--wite-bg);
   padding: 8px;
   display: flex;

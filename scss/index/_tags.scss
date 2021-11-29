@@ -21,7 +21,7 @@
   width: 234px;
   text-decoration: none;
   color: var(--regular);
-  padding: 6px 24px;
+  padding: 11px 24px;
   display: block;
   font-weight: 400;
   font-size: 14px;
@@ -92,8 +92,7 @@
   cursor: pointer;
 }
 .slick-prev {
-  right: 0;
-  top: 3px;
+  right: -1px;
   top: -9px;
   height: 48px;
   background: #ffffff;
@@ -110,9 +109,9 @@
   }
 }
 .slick-next {
-  position: relative;
-  top: -28px;
-  top: -39px;
+  position: absolute;
+  top: -9px;
+  left: -1px;
   height: 48px;
   background: #ffffff;
   background: linear-gradient(90deg, #ffffff 26%, #ffffffc4 75%);
